@@ -128,7 +128,9 @@ export default {
 		// For Production mode!
 		// 제품 모드에서는 'console.log' 같은 Console 명령을 제거합니다.
 		production && strip({
+			// ** 모든 경로/* 모든 파일명.svelte|js 확장자
 			include: '**/*.(svelte|js)',
+			// functions: [ 'console.*', 'assert.*' ] 기본 값 이므로 명시 할 필요 없음
 		}),
 		// 제품 모드에서는 번들을 최소화(최적화)합니다.
 		production && terser()

@@ -76,6 +76,7 @@
     // inline-block 요소의 띄어쓰기 공간을 부모 요소에서 초기화했기 때문에,
     // 다시 글자 크기를 원상태로 복원합니다.
     font-size: 16px;
+    // 텍스트를 한줄로 작성할 경우 넘치지 않고 줄바꿈 함 (상속됨)
     word-break: break-all;
     display: inline-block;
     vertical-align: top;
